@@ -32,7 +32,7 @@ $$
 The fluxes on the faces must be reconstructed, since two states exist, one for each cell next to the face $u^-$ and $u^+$. Defining the average and jump operators:
 
 $$
-    \left\{v\right\} = \frac{v^- + v^+}{2}
+    \left\lbrace v\right\rbrace = \frac{v^- + v^+}{2}
 $$
 
 $$
@@ -43,7 +43,7 @@ Using the interior penalty Discontinuous Galerkin method (IPDG), we can write th
 
 $$
 - \int_{\Gamma_i} v \left(\nabla u \cdot n\right) \, d\Gamma_i
-= \int_{\Gamma_i} \left(\left\{\nabla u \cdot n\right\}\left[v\right] - \delta \left\{\nabla v \cdot n\right\}\left[u\right] + \frac{\alpha}{h}\left[v\right]\left[u\right] \right) d\Gamma_i 
+= \int_{\Gamma_i} \left(\left\lbrace\nabla u \cdot n\right\rbrace\left[v\right] - \delta \left\lbrace\nabla v \cdot n\right\rbrace\left[u\right] + \frac{\alpha}{h}\left[v\right]\left[u\right] \right) d\Gamma_i 
 $$
 
 Where $\delta$ is either -1, 0 or 1, $\alpha$ is a penalty parameter for the jump between elements, and $h$ is a local cell scale (cell width). 
@@ -51,7 +51,7 @@ Where $\delta$ is either -1, 0 or 1, $\alpha$ is a penalty parameter for the jum
 The overall weak form is:
 
 $$
-    \int_{\Omega_i} \nabla v \cdot \nabla u \, d\Omega_i + \int_{\Gamma_i} \left(\left\{\nabla u \cdot n\right\}\left[v\right] - \delta \left\{\nabla v \cdot n\right\}\left[u\right] + \frac{\alpha}{h}\left[v\right]\left[u\right] \right) d\Gamma_i = \int_{\Omega_i} v f \, d\Omega_i
+    \int_{\Omega_i} \nabla v \cdot \nabla u \, d\Omega_i + \int_{\Gamma_i} \left(\left\lbrace\nabla u \cdot n\right\rbrace\left[v\right] - \delta \left\lbrace\nabla v \cdot n\right\rbrace\left[u\right] + \frac{\alpha}{h}\left[v\right]\left[u\right] \right) d\Gamma_i = \int_{\Omega_i} v f \, d\Omega_i
 $$
 
 
