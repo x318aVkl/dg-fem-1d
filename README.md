@@ -154,6 +154,7 @@ Verification was done using Legendre polynomials.
 ### Poisson
 
 Using the manufactured exact solution:
+
 $$
     u(x) = \sin(2\pi x)
 $$
@@ -164,6 +165,7 @@ $$
 $$
 
 The forcing term is:
+
 $$
     f = - \left(2\pi\right)^2 \sin(2\pi x)
 $$
@@ -187,16 +189,19 @@ Order of convergences tested on the poisson case for degree 0 to 3 elements are:
 ### Convection
 
 Using the manufactured exact solution:
+
 $$
     u(x) = \frac{2x^2}{x+1}-\frac{x^3}{2}
 $$
 
 And the convection equation:
+
 $$
     \nabla u = f
 $$
 
 The forcing term is:
+
 $$
     f = \frac{x\left(-3x^3-6x^2+x+8\right)}{2\left(x+1\right)^2}
 $$
