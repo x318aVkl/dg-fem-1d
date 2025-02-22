@@ -43,10 +43,11 @@ $$
 
 Using the interior penalty Discontinuous Galerkin method (IPDG), we can write the boundary integral as:
 
+
 $$
-- \int_{\Gamma_i} v \left(\nabla u \cdot n\right) \, d\Gamma_i
-= \int_{\Gamma_i} \left(\left\lbrace\nabla u \cdot n\right\rbrace\left[v\right] - \delta \left\lbrace\nabla v \cdot n\right\rbrace\left[u\right] + \frac{\alpha}{h}\left[v\right]\left[u\right] \right) d\Gamma_i 
+- \int_{\Gamma_i} v \left(\nabla u \cdot n\right) \, d\Gamma_i = \int_{\Gamma_i} \left(\left\lbrace\nabla u \cdot n\right\rbrace\left[v\right] - \delta \left\lbrace\nabla v \cdot n\right\rbrace\left[u\right] + \frac{\alpha}{h}\left[v\right]\left[u\right] \right) d\Gamma_i 
 $$
+
 
 Where $\delta$ is either -1, 0 or 1, $\alpha$ is a penalty parameter for the jump between elements, and $h$ is a local cell scale (cell width). 
 
