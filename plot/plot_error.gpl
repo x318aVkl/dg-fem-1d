@@ -1,0 +1,8 @@
+
+set logscale y 10
+set logscale x 2
+
+set format y "10^{%T}"
+
+plot "error.txt" using 1:2 with lines linecolor 8 notitle, \
+

@@ -1,0 +1,5 @@
+
+
+plot "data.txt" using 1:2 with lines linecolor 8 notitle, \
+     "edges.txt" using 1:2 pointtype 7 pointsize 1 lc rgb "black" notitle
+
