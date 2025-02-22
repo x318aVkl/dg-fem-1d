@@ -23,7 +23,9 @@ $$
     - \int_{\Omega_i} v \Delta u \, d\Omega_i = \int_{\Omega_i} v f \, d\Omega_i
 $$
 
-Integrating by parts adds a boundary term over the element boundary $\Gamma_i$
+Integrating by parts adds a boundary term over the element boundary 
+
+$\Gamma_i$
 
 $$
     \int_{\Omega_i} \nabla v \cdot \nabla u \, d\Omega_i - \int_{\Gamma_i} v \left(\nabla u \cdot n\right) \, d\Gamma_i = \int_{\Omega_i} v f \, d\Omega_i
